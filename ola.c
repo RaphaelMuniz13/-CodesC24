@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>    //https://github.com/ifmt-cba/lingprog20242
 
 void main ( ){
     int x = 0; //Valor de variavel Inteira
@@ -15,5 +15,8 @@ void main ( ){
     char nome[30] = "Raphaew";
     printf("Nome: %s\n",nome);
     printf("Primeira letra do nome: %c\n",nome[0]);
+    printf("\nDigite o valor de x:");
+    scanf("%d",&x);
+    printf("O valor digitado foi de %d", x );
     printf("Olá, Mundo!");
 }
