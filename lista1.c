@@ -6,17 +6,34 @@ Exercícios sobre os comandos básicos em C
 */
 
 //1. Faça um programa que imprima o seu nome.
-void q1{
+void q1() {
     printf("Raphaew Muniz");
 }
 //2. Faça um programa que imprima o produto dos valores 30 e 27.
-
+void q2 (){
+    printf("30*27 = %d",30*27);
+}
 //3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
-
+void q3(){
+    float media = (5+8+12)/3.0;
+    printf("Média de 5+8+12/3 = %.1f\n",media);
+}
 //4. Faça um programa que leia e imprima um número inteiro.
-
+void q4(){
+    int num = 0;
+    printf("Digite o valor numérico inteiro: ");
+    scanf("%d", &num);
+    printf("O valor digitado foi %d\n",num);
+}
 //5. Faça um programa que leia dois números reais e os imprima.
-
+void q5 (){
+    float real=0;
+    float real2=0;
+    printf("Digite o valor primeiro valor real:");
+    scanf("%f",&real);
+    printf("Digite o segundo valor real:");
+    scanf("%f",&real2);
+}
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
 
@@ -87,6 +104,6 @@ void q1{
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-
+q5();
     return EXIT_SUCCESS;
 }
