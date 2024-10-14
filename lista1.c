@@ -36,9 +36,32 @@ void q5 (){
 }
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
-
+void q6(){
+    int num,antecessor;
+    printf("Digite um número: ");
+    scanf("%d",&num);
+antecessor= num-1;
+    }
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+#include <stdio.h>
+
+void q7() {
+    char nome[30];
+    char endereco[50];
+    char telefone[12];
+
+    printf("Digite seu nome: ");
+    scanf("%29s", nome);  
+    
+    printf("Digite seu endereço (sem espaços): ");
+    scanf("%49s", endereco);
+
+    printf("Digite seu telefone ex(0xx 9xxxx-xxxx): ");
+    scanf("%11s", telefone); 
+
+    printf("\nNome: %s\nEndereço: %s\nTelefone: %s\n", nome, endereco, telefone);
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
@@ -104,6 +127,6 @@ void q5 (){
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-q5();
+q7();
     return EXIT_SUCCESS;
 }
