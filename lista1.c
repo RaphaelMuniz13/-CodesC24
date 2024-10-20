@@ -166,12 +166,31 @@ void q15(){
 //    funcionário. Para isso, o programa deverá ler o salário atual
 //    do funcionário e ler o percentual de reajuste. Ao final imprimir
 //    o valor do novo salário.
+void q16(){
+    float salario,reajuste,novo_salario;
+    printf("Digite o salário do funcionário:");
+    scanf("%f",&salario);
+
+    printf("Digite o Reajuste: ");
+    scanf("%f",&reajuste);
+
+novo_salario = salario+(salario*reajuste/100);
+printf("Seu novo salário é %.2f\n",novo_salario);
+}
 
 //17. Faça um programa que calcule a conversão entre graus centígrados
 //    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 //    com base na fórmula a seguir. Após calcular o programa deve
 //    imprimir o resultado da conversão.
 //    F = (9 x C +160) / 5
+void q17(){
+    float c,f;
+    printf("Digite a temperatura em Graus");
+    scanf("%f",&c);
+
+f=(9*c+160)/5;
+printf("A temperatura em Fahrenheit é : %.2f\n",f);
+}
 
 //18. Faça um programa que calcule a quantidade de litros de combustível
 //    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -185,6 +204,24 @@ void q15(){
 //    • L = Litros de combustível consumidos
 //    Ao final, o programa deverá imprimir a distância percorrida e a
 //    quantidade de litros consumidos na viagem.
+void q18(){
+float D, T, V, L;
+    const float Autonomia = 12; // Autonomia de 12 km por litro
+
+    // Entrada de dados
+    printf("Digite o tempo percorrido (em horas): ");
+    scanf("%f", &T);
+
+    printf("Digite a distância percorrida (em km): ");
+    scanf("%f", &D);
+
+    V = D / T;
+
+    L = D / Autonomia;
+
+    printf("O valor da velocidade média percorrida será: %.2f km/h\n", V);
+    printf("Foram consumidos %.2f litros de combustível\n", L);
+}
 
 //19. Faça um programa que calcule o valor de uma prestação em atraso.
 //    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -198,6 +235,6 @@ void q15(){
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-q15();
+q18();
     return EXIT_SUCCESS;
 }
