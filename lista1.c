@@ -262,6 +262,6 @@ real=dolar*5.71;
 }
 
 int main() {
-q19();
+q8();
     return EXIT_SUCCESS;
 }
